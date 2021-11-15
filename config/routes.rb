@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   root 'main#home'
 
   get 'about', to: 'main#about'
+
+  resources :articles, only: [:show]
 end
