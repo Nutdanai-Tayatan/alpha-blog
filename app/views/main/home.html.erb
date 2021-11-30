@@ -1,4 +1,40 @@
-<h1>Main#home</h1>
+<style>
 
-<%= link_to 'Article listing', articles_path %> |
-<%= link_to 'About page', about_path%>
+
+#footer{
+    color : grey;
+}
+
+.jumbotron{
+    text-align : center;
+}
+
+#page-content{
+    flex: 1 0 auto;
+    background-color: lightgrey;
+}
+
+
+</style>
+
+
+<div id="page-content">
+    <div class = "container mt-3" id = "home-c" >
+        <div class="jumbotron">
+            <h1 class="display-4">Home Page</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <div>
+                <a class='btn btn-secondary btn-lg' href='#' role="button">Sign Up</a>
+            </div>
+            </br>
+            <%= link_to 'Article listing', articles_path %> |
+            <%= link_to 'About', about_path %>
+        
+        </div>
+    </div>
+
+
+  
+</div>
